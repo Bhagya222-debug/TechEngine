@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reported Speech - Grade 10 Learning</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <h1>📚 Reported Speech Learning Center</h1>
+        <p>Grade 10 English - Interactive Learning Experience</p>
+    </header>
+
+    <nav class="tab-navigation">
+        <button class="tab-btn active" onclick="showSection('video', this)">🎥 Video</button>
+        <button class="tab-btn" onclick="showSection('theory', this)">📖 Theory</button>
+        <button class="tab-btn" onclick="showSection('examples', this)">💡 Examples</button>
+        <button class="tab-btn" onclick="showSection('practice', this)">✏️ Practice</button>
+        <button class="tab-btn" onclick="showSection('quiz', this)">🎯 Quiz</button>
+    </nav>
+
+    <main>
+        <!-- Video Section -->
+        <section id="video" class="content-section active">
+            <div class="video-container">
+                <h2>Introduction to Reported Speech</h2>
+                <div class="video-wrapper">
+                    <video controls width="100%" height="100%">
+                        <source src="reported-speech-video.mp4" type="video/mp4">
+                        <source src="reported-speech-video.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p>Watch this video to get started with reported speech concepts!</p>
+            </div>
+        </section>
+
+        <!-- Theory Section -->
+        <section id="theory" class="content-section">
+            <h2>📖 Understanding Reported Speech</h2>
+            <div class="theory-content">
+                <div class="concept-box">
+                    <h3>What is Reported Speech?</h3>
+                    <p>Reported speech (also called indirect speech) is when we tell someone what another person said without using their exact words.</p>
+                </div>
+
+                <div class="rule-box">
+                    <h3>Key Rules to Remember:</h3>
+                    <ul>
+                        <li><strong>Tense Changes:</strong> When reporting speech, we usually change the tense</li>
+                        <li><strong>Pronoun Changes:</strong> Pronouns may need to change based on context</li>
+                        <li><strong>Time/Place Changes:</strong> Words like "today", "here" may change to "that day", "there"</li>
+                    </ul>
+                </div>
+
+                <div class="tense-chart">
+                    <h3>Tense Changes in Reported Speech</h3>
+                    <table>
+                        <tr>
+                            <th>Direct Speech</th>
+                            <th>Reported Speech</th>
+                        </tr>
+                        <tr>
+                            <td>Simple Present → Simple Past</td>
+                            <td>"I like pizza" → He said he liked pizza</td>
+                        </tr>
+                        <tr>
+                            <td>Simple Past → Past Perfect</td>
+                            <td>"I went home" → She said she had gone home</td>
+                        </tr>
+                        <tr>
+                            <td>Present Perfect → Past Perfect</td>
+                            <td>"I have finished" → He said he had finished</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Examples Section -->
+        <section id="examples" class="content-section">
+            <h2>💡 Examples from Uncle Angelo</h2>
+            <div class="examples-grid">
+                <div class="example-card">
+                    <h3>Example 1</h3>
+                    <div class="direct-speech">
+                        <strong>Direct Speech:</strong><br>
+                        Uncle Angelo said, "It looks very nice"
+                    </div>
+                    <div class="arrow">↓</div>
+                    <div class="reported-speech">
+                        <strong>Reported Speech:</strong><br>
+                        Uncle Angelo said that it looked very nice
+                    </div>
+                    <div class="note">
+                        📝 <em>Simple present "looks" changed to simple past "looked"</em>
+                    </div>
+                </div>
+
+                <div class="example-card">
+                    <h3>Example 2</h3>
+                    <div class="direct-speech">
+                        <strong>Direct Speech:</strong><br>
+                        "He is my new boss", Uncle Angelo said
+                    </div>
+                    <div class="arrow">↓</div>
+                    <div class="reported-speech">
+                        <strong>Reported Speech:</strong><br>
+                        Uncle Angelo said that he was his new boss
+                    </div>
+                    <div class="note">
+                        📝 <em>Simple present "is" changed to simple past "was"</em>
+                    </div>
+                </div>
+
+                <div class="example-card">
+                    <h3>Example 3</h3>
+                    <div class="direct-speech">
+                        <strong>Direct Speech:</strong><br>
+                        Uncle Angelo said, "I decided to shave it off"
+                    </div>
+                    <div class="arrow">↓</div>
+                    <div class="reported-speech">
+                        <strong>Reported Speech:</strong><br>
+                        Uncle Angelo said that he had decided to shave it off
+                    </div>
+                    <div class="note">
+                        📝 <em>Simple past "decided" changed to past perfect "had decided"</em>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Section -->
+        <section id="practice" class="content-section">
+            <h2>✏️ Practice Exercises</h2>
+            <div class="practice-container">
+                <div class="exercise" id="exercise1">
+                    <h3>Exercise 1: Convert to Reported Speech</h3>
+                    <p><strong>Direct Speech:</strong> Maria said, "I am going to the store."</p>
+                    <input type="text" id="answer1" placeholder="Write the reported speech here...">
+                    <button onclick="checkAnswer(1, 'Maria said that she was going to the store')">Check Answer</button>
+                    <div id="feedback1" class="feedback"></div>
+                </div>
+
+                <div class="exercise" id="exercise2">
+                    <h3>Exercise 2: Convert to Reported Speech</h3>
+                    <p><strong>Direct Speech:</strong> "I have completed my homework," Tom said.</p>
+                    <input type="text" id="answer2" placeholder="Write the reported speech here...">
+                    <button onclick="checkAnswer(2, 'Tom said that he had completed his homework')">Check Answer</button>
+                    <div id="feedback2" class="feedback"></div>
+                </div>
+
+                <div class="exercise" id="exercise3">
+                    <h3>Exercise 3: Convert to Reported Speech</h3>
+                    <p><strong>Direct Speech:</strong> Sarah said, "I will call you tomorrow."</p>
+                    <input type="text" id="answer3" placeholder="Write the reported speech here...">
+                    <button onclick="checkAnswer(3, 'Sarah said that she would call me the next day')">Check Answer</button>
+                    <div id="feedback3" class="feedback"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz" class="content-section">
+            <h2>🎯 Knowledge Quiz</h2>
+            <div class="quiz-container">
+                <div id="quiz-question" class="quiz-question">
+                    <h3 id="question-text"></h3>
+                    <div id="quiz-options" class="quiz-options"></div>
+                    <button id="submit-btn" onclick="submitQuizAnswer()">Submit Answer</button>
+                    <button id="next-btn" onclick="nextQuestion()" style="display:none;">Next Question</button>
+                </div>
+                <div id="quiz-result" class="quiz-result">
+                    <p>Score: <span id="score">0</span>/5</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
